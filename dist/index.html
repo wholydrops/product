@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Image to Content Page Transition | Codrops</title>
+		<meta name="description" content="A simple page transition where a large image animates to a content area.">
+		<meta name="keywords" content="gsap, flip, javascript, animation, page transition">
+		<meta name="author" content="Codrops">
+		<link rel="shortcut icon" href="/favicon.824cf0c5.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/ckf7ljy.css">
+		<link rel="stylesheet" type="text/css" href="/index.d046a61c.css">
+		<script>document.documentElement.className = "js";
+var supportsCssVars = function() {
+    var e, t = document.createElement("style");
+    return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+</script>
+	</head>
+	<body class="loading">
+		<main>
+			<div class="frame">
+				<div class="frame__title"> 
+					<h1 class="frame__title-main">WHOLYDROPS ~ Journey</h1> 
+					<a aria-label="Back to the article" class="frame__title-back" href="https://tympanus.net/codrops/?p="> 
+						<span class="oh__inner">Back to the journey</span> 
+						<svg width="18px" height="18px" viewbox="0 0 24 24"><path vector-effect="non-scaling-stroke" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"></path>
+						</svg>
+					</a> 
+				</div>
+				<a class="frame__prev" href="#">Research</a>
+			</div>
+			<section class="preview-wrap">
+				<div class="preview">
+					<div class="preview__img-wrap"><div class="preview__img"><div class="preview__img-inner" style="background-image: url(&quot;1.a45131b3.jpg&quot;)"></div></div></div>
+					<div class="preview__title">
+						<h2 class="preview__title-main">
+							<span class="oh"><span class="oh__inner">Lion's</span></span>
+							<span class="oh"><span class="oh__inner">Mane</span></span>
+						</h2>
+						<p class="preview__desc">A volcanic rock of intermediate composition, between silica-poor basalt and silica-rich rhyolite.</p>
+					</div>
+				</div>
+				<div class="preview">
+					<div class="preview__img-wrap"><div class="preview__img"><div class="preview__img-inner" style="background-image: url(&quot;2.cccf08ef.jpg&quot;)"></div></div></div>
+					<div class="preview__title">
+						<h2 class="preview__title-main">
+							<span class="oh"><span class="oh__inner">Reishi</span></span>
+							<span class="oh"><span class="oh__inner">Mushroom</span></span>
+						</h2>
+						<p class="preview__desc">A large mass of intrusive igneous rock made mostly of felsic or intermediate rock types.</p>
+					</div>
+				</div>
+				<div class="preview">
+					<div class="preview__img-wrap"><div class="preview__img"><div class="preview__img-inner" style="background-image: url(&quot;3.3ef41889.jpg&quot;)"></div></div></div>
+					<div class="preview__title">
+						<h2 class="preview__title-main">
+							<span class="oh"><span class="oh__inner">Chaga</span></span>
+							<span class="oh"><span class="oh__inner">Mushroom</span></span>
+						</h2>
+						<p class="preview__desc">a volcanic rock that consists of highly vesicular rough-textured volcanic glass.</p>
+					</div>
+				</div>
+				<div class="preview">
+					<div class="preview__img-wrap"><div class="preview__img"><div class="preview__img-inner" style="background-image: url(&quot;4.0e5501ba.jpg&quot;)"></div></div></div>
+					<div class="preview__title">
+						<h2 class="preview__title-main">
+							<span class="oh"><span class="oh__inner">Turkey</span></span>
+							<span class="oh"><span class="oh__inner">Tail</span></span>
+						</h2>
+						<p class="preview__desc">An igneous, volcanic rock, with aphanitic-aphyric to aphyric-porphyritic texture.</p>
+					</div>
+				</div>
+				<div class="preview">
+					<div class="preview__img-wrap"><div class="preview__img"><div class="preview__img-inner" style="background-image: url(&quot;5.f63eb06a.jpg&quot;)"></div></div></div>
+					<div class="preview__title">
+						<h2 class="preview__title-main">
+							<span class="oh"><span class="oh__inner">Maiitake</span></span>
+							<span class="oh"><span class="oh__inner">Mushroom</span></span>
+						</h2>
+						<p class="preview__desc">A volcanic rock with gray-white large porphyritic rhombus-shaped phenocrysts of feldspar.</p>
+					</div>
+				</div>
+				<div class="preview">
+					<div class="preview__img-wrap"><div class="preview__img"><div class="preview__img-inner" style="background-image: url(&quot;6.a9c5f8cd.jpg&quot;)"></div></div></div>
+					<div class="preview__title">
+						<h2 class="preview__title-main">
+							<span class="oh"><span class="oh__inner">Elm</span></span>
+							<span class="oh"><span class="oh__inner">Oyster</span></span>
+						</h2>
+						<p class="preview__desc">a calcium rich member of the plagioclase solid solution series of feldspar minerals.</p>
+					</div>
+				</div>
+				<div class="preview">
+					<div class="preview__img-wrap"><div class="preview__img"><div class="preview__img-inner" style="background-image: url(&quot;7.73eefc2c.jpg&quot;)"></div></div></div>
+					<div class="preview__title">
+						<h2 class="preview__title-main">
+							<span class="oh"><span class="oh__inner">Discovery</span></span>
+							<span class="oh"><span class="oh__inner">Call</span></span>
+						</h2>
+						<p class="preview__desc">A rock-forming mineral belonging to the plagioclase feldspars.</p>
+					</div>
+				</div>
+				<div class="preview">
+					<div class="preview__img-wrap"><div class="preview__img"><div class="preview__img-inner" style="background-image: url(&quot;8.b0eb1439.jpg&quot;)"></div></div></div>
+					<div class="preview__title">
+						<h2 class="preview__title-main">
+							<span class="oh"><span class="oh__inner">Orgonite</span></span>
+							<span class="oh"><span class="oh__inner">Pyramids</span></span>
+						</h2>
+						<p class="preview__desc">An abundant zeolite mineral that is used commercially.</p>
+					</div>
+				</div>
+				<div class="preview">
+					<div class="preview__img-wrap"><div class="preview__img"><div class="preview__img-inner" style="background-image: url(&quot;9.a268fd13.jpg&quot;)"></div></div></div>
+					<div class="preview__title">
+						<h2 class="preview__title-main">
+							<span class="oh"><span class="oh__inner">Home</span></span>
+							<span class="oh"><span class="oh__inner">Shop</span></span>
+						</h2>
+						<p class="preview__desc">An extremely hard, dense tetragonal form of silicon dioxide.</p>
+					</div>
+				</div>
+			</section>
+			<section class="content-wrap">
+				<div class="content">
+					<div class="content__group">
+						<div class="content__title">
+							<span class="oh"><span class="oh__inner">Andesite</span></span>
+							<span class="oh"><span class="oh__inner">aphanitic</span></span>
+						</div>
+						<div class="content__meta oh"><span class="oh__inner">By James Maurice Rojo</span></div>
+						<div class="content__text">
+							Andesite (/ˈændəzaɪt/) is a volcanic rock of intermediate composition. In a general sense, it is the intermediate type between silica-poor basalt and silica-rich rhyolite. 
+						</div>
+					</div>
+					<div class="content__thumbs">
+						<div class="content__thumbs-item" style="background-image: url(&quot;1_1.f77613a9.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;1_2.7e304a4a.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;1_3.6f20bbb9.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;1_4.41908b6e.jpg&quot;)"></div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="content__group">
+						<div class="content__title">
+							<span class="oh"><span class="oh__inner">Batholith</span></span>
+							<span class="oh"><span class="oh__inner">plutonic</span></span>
+						</div>
+						<div class="content__meta oh"><span class="oh__inner">By Anna Walters</span></div>
+						<div class="content__text">
+							A batholith (from Ancient Greek bathos 'depth', and lithos 'rock') is a large mass of intrusive igneous rock (also called plutonic rock), larger than 100 km2 (40 sq mi) in area, that forms from cooled magma deep in Earth's crust.
+						</div>
+					</div>
+					<div class="content__thumbs">
+						<div class="content__thumbs-item" style="background-image: url(&quot;2_1.24cbbd12.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;2_2.74dc415e.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;2_3.3c4cf71f.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;2_4.851279b8.jpg&quot;)"></div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="content__group">
+						<div class="content__title">
+							<span class="oh"><span class="oh__inner">Pumicite</span></span>
+							<span class="oh"><span class="oh__inner">vesicular</span></span>
+						</div>
+						<div class="content__meta oh"><span class="oh__inner">By Walter Green</span></div>
+						<div class="content__text">
+							Pumice ( /ˈpʌmɪs/), called pumicite in its powdered or dust form, is a volcanic rock that consists of highly vesicular rough-textured volcanic glass, which may or may not contain crystals. It is typically light-colored. 
+						</div>
+					</div>
+					<div class="content__thumbs">
+						<div class="content__thumbs-item" style="background-image: url(&quot;3_1.ff23fa01.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;3_2.084c4b61.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;3_3.bbf5915a.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;3_4.43dacb82.jpg&quot;)"></div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="content__group">
+						<div class="content__title">
+							<span class="oh"><span class="oh__inner">Latite</span></span>
+							<span class="oh"><span class="oh__inner">aphyric</span></span>
+						</div>
+						<div class="content__meta oh"><span class="oh__inner">By Nora Gilberts</span></div>
+						<div class="content__text">
+							Latite is an igneous, volcanic rock, with aphanitic-aphyric to aphyric-porphyritic texture. Its mineral assemblage is usually alkali feldspar and plagioclase in approximately equal amounts.
+						</div>
+					</div>
+					<div class="content__thumbs">
+						<div class="content__thumbs-item" style="background-image: url(&quot;4_1.2f934410.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;4_2.18e9edc8.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;4_3.3753ad19.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;4_4.f45d40e7.jpg&quot;)"></div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="content__group">
+						<div class="content__title">
+							<span class="oh"><span class="oh__inner">Rhomb</span></span>
+							<span class="oh"><span class="oh__inner">porphyry</span></span>
+						</div>
+						<div class="content__meta oh"><span class="oh__inner">By Bobby D. May</span></div>
+						<div class="content__text">
+							Rhomb porphyry is a volcanic rock with gray-white large porphyritic rhombus-shaped phenocrysts of feldspar (commonly anorthoclase) embedded in a very fine-grained red-brown matrix.
+						</div>
+					</div>
+					<div class="content__thumbs">
+						<div class="content__thumbs-item" style="background-image: url(&quot;5_1.7f208acc.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;5_2.9920da08.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;5_3.c9ff2e52.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;5_4.5f0cac15.jpg&quot;)"></div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="content__group">
+						<div class="content__title">
+							<span class="oh"><span class="oh__inner">Bytownite</span></span>
+							<span class="oh"><span class="oh__inner">triclinic</span></span>
+						</div>
+						<div class="content__meta oh"><span class="oh__inner">By Maria Kilkenny</span></div>
+						<div class="content__text">
+							Bytownite is a calcium rich member of the plagioclase solid solution series of feldspar minerals with composition between anorthite and labradorite. Like others of the series, bytownite forms grey to white triclinic crystals.
+						</div>
+					</div>
+					<div class="content__thumbs">
+						<div class="content__thumbs-item" style="background-image: url(&quot;6_1.2885ec98.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;6_2.a3bb189b.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;6_3.6a07e840.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;6_4.fe349389.jpg&quot;)"></div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="content__group">
+						<div class="content__title">
+							<span class="oh"><span class="oh__inner">Oligoclase</span></span>
+							<span class="oh"><span class="oh__inner">plagioclase</span></span>
+						</div>
+						<div class="content__meta oh"><span class="oh__inner">By Lauren Kraft</span></div>
+						<div class="content__text">
+							Oligoclase is a rock-forming mineral belonging to the plagioclase feldspars. In chemical composition and in its crystallographic and physical characters it is intermediate between albite and anorthite.
+						</div>
+					</div>
+					<div class="content__thumbs">
+						<div class="content__thumbs-item" style="background-image: url(&quot;7_1.70084ed9.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;7_2.6af3a1b0.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;7_3.b109dae2.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;7_4.9913ade4.jpg&quot;)"></div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="content__group">
+						<div class="content__title">
+							<span class="oh"><span class="oh__inner">Mordenite</span></span>
+							<span class="oh"><span class="oh__inner">fibrous</span></span>
+						</div>
+						<div class="content__meta oh"><span class="oh__inner">By Stephen Kaiser</span></div>
+						<div class="content__text">
+							Mordenite is a zeolite mineral that is one of the six most abundant zeolites and is used commercially. It was first described in 1864 by Henry How.
+						</div>
+					</div>
+					<div class="content__thumbs">
+						<div class="content__thumbs-item" style="background-image: url(&quot;8_1.2d21f9bc.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;8_2.19a32a91.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;8_3.bc01fd19.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;8_4.3ca1ee2e.jpg&quot;)"></div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="content__group">
+						<div class="content__title">
+							<span class="oh"><span class="oh__inner">Stishovite</span></span>
+							<span class="oh"><span class="oh__inner">tetragonal</span></span>
+						</div>
+						<div class="content__meta oh"><span class="oh__inner">By Alexander Cook</span></div>
+						<div class="content__text">
+							Stishovite is an extremely hard, dense tetragonal form (polymorph) of silicon dioxide. Large natural crystals of stishovite are extremely rare and are usually found as clasts of 1 to 2 mm in length. 
+						</div>
+					</div>
+					<div class="content__thumbs">
+						<div class="content__thumbs-item" style="background-image: url(&quot;9_1.4165a3bd.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;9_2.b6a1c63c.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;9_3.ebc81507.jpg&quot;)"></div>
+						<div class="content__thumbs-item" style="background-image: url(&quot;9_4.cdfd3a32.jpg&quot;)"></div>
+					</div>
+				</div>
+				<button class="unbutton action action--back">
+					<svg width="25px" height="25px" viewbox="0 0 25 25"><path d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"></path></svg>
+					<span>Go back</span>
+				</button>
+			</section>
+		</main>
+		<script src="/index.739bf03c.js" defer=""></script>
+	</body>
+</html>
