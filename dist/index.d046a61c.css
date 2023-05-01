@@ -227,7 +227,7 @@ main {
   height: 100%;
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size: 100%;
 }
 
 .content__meta {
